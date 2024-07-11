@@ -1,0 +1,56 @@
+.cardContainer {
+  max-width: 463px;
+  display: flex;
+  justify-content: space-between;
+  .imageContainer {
+    border-radius: 5px;
+  }
+  .contentContainer {
+    max-width: 326px;
+    width: 100%;
+    .location {
+      width: fit-content;
+      display: flex;
+      align-content: center;
+      column-gap: 12px;
+      margin-bottom: 4px;
+      .locationName {
+        display: flex;
+        img {
+          margin-right: 4px;
+        }
+      }
+      .locationMap {
+        font-size: 10px;
+        color: #918e9b;
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+      }
+    }
+    .title {
+      margin-bottom: 7px;
+      h3 {
+        font-size: 25px;
+        font-weight: bold;
+        color: #2b283a;
+        line-height: 40px;
+      }
+    }
+    .date {
+      margin-bottom: 9px;
+      p {
+        font-size: 10px;
+        font-weight: bold;
+        color: #2b283a;
+      }
+    }
+    .about {
+      p {
+        font-size: 10px;
+        line-height: 150%;
+        color: #2b283a;
+      }
+    }
+  }
+}
