@@ -2,13 +2,23 @@ import React from "react";
 import data from "./data";
 import Header from "./components/header/Header";
 import Card from "./components/card/Card";
-import "./global.css";
-
 function App() {
+  // inline style imitom shevqmeni rom cardebs shoris dashoreba gameketebina.
+  const inlineStyle = {
+    cardList: {
+      height: "576px",
+      maxWidth: "470px",
+      width: "100%",
+      margin: "0 auto",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+    },
+  };
   return (
     <>
       <Header />
-      <div className="card-list">
+      <div style={inlineStyle.cardList}>
         {data.map((item) => {
           return (
             <Card
